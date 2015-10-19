@@ -32,5 +32,19 @@ public class LoadImageApp extends Component {
                      }
             }
    
-            
+public static void main(String[] args) {
+   
+                        JFrame f = new JFrame("Load Image Sample");
+                                       
+                        f.addWindowListener(new WindowAdapter(){
+                                                public void windowClosing(WindowEvent e) {
+                                                            System.exit(0);
+                                                }
+                                    });
+   
+                        f.add(new LoadImageApp());
+                        f.pack();
+                        f.setVisible(true);
+} 
+           
 }
